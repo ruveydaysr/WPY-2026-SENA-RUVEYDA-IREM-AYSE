@@ -14,7 +14,7 @@
 
         <nav>
             <a href="index.html">Ana Sayfa</a>
-            <a href="kayit.html">Kayıt Ol</a>
+            <a href="kayit.php">Kayıt Ol</a>
             <a href="giris.html">Giriş Yap</a>
         </nav>
     </header>
@@ -24,7 +24,7 @@
 
             <h2>Müşteri Kayıt</h2>
 
-            <form>
+            <form action="kayit-islem.php" method="POST">
 
                 <label for="adsoyad">Ad Soyad:</label>
                 <input type="text" id="adsoyad" name="adsoyad" required>
