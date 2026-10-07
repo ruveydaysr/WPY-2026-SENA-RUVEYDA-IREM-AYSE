@@ -201,3 +201,18 @@ body {
 .servis-detay button:hover {
     background-color: #1a252f;
 }
+.kart-link {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+.kart-link .panel-kart {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.kart-link .panel-kart:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
