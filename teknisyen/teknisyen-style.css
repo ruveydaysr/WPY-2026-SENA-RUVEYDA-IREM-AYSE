@@ -228,3 +228,30 @@ body {
 .ana-sayfa-link:hover {
     text-decoration: underline;
 }
+.cikis-butonu {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cikis-butonu:hover {
+    background-color: #c0392b;
+}
+.geri-butonu {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.geri-butonu:hover {
+    background-color: #2c3e50;
+}
