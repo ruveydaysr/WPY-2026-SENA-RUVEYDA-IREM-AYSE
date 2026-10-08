@@ -60,13 +60,39 @@
                 <option>Onarım Yapılıyor</option>
                 <option>Tamamlandı</option>
             </select>
-
+            <p id="durum-gostergesi">Mevcut Durum: Bekliyor</p>
             <button type="submit">Servisi Güncelle</button>
 
         </form>
 
     </div>
+
+
+
+
+
 <script>
+
+    const durumSecimi = document.getElementById("durum");
+const durumGostergesi = document.getElementById("durum-gostergesi");
+
+function durumGuncelle() {
+    const secilenDurum = durumSecimi.value;
+
+    const durumRenkleri = {
+        "Bekliyor": "durum-bekliyor",
+        "İnceleniyor": "durum-inceleniyor",
+        "Parça Bekliyor": "durum-parca",
+        "Onarım Yapılıyor": "durum-onarim",
+        "Tamamlandı": "durum-tamamlandi"
+    };
+
+    durumGostergesi.className = durumRenkleri[secilenDurum] || "";
+    durumGostergesi.textContent = "Mevcut Durum: " + secilenDurum;
+}
+
+durumSecimi.addEventListener("change", durumGuncelle);
+durumGuncelle();
     const parcaUcreti = document.getElementById("parca-ucreti");
     const iscilikUcreti = document.getElementById("iscilik");
     const toplamUcret = document.getElementById("toplam-ucret");

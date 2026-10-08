@@ -255,3 +255,36 @@ body {
 .geri-butonu:hover {
     background-color: #2c3e50;
 }
+#durum-gostergesi {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.durum-bekliyor {
+    background-color: #fff3cd !important;
+    color: #856404 !important;
+}
+
+.durum-inceleniyor {
+    background-color: #d1ecf1 !important;
+    color: #0c5460 !important;
+}
+
+.durum-parca {
+    background-color: #ffe5b4 !important;
+    color: #9a5700 !important;
+}
+
+.durum-onarim {
+    background-color: #e8daef !important;
+    color: #6c3483 !important;
+}
+
+.durum-tamamlandi {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+}
