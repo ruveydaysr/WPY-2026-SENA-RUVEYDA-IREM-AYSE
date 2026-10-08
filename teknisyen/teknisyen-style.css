@@ -216,3 +216,15 @@ body {
     transform: translateY(-3px);
     transition: 0.2s;
 }
+.ana-sayfa-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ana-sayfa-link:hover {
+    text-decoration: underline;
+}
