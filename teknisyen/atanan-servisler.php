@@ -1,7 +1,17 @@
+
 <?php
 session_start();
+require_once("../baglanti.php");
 
-include("../baglanti.php");
+// Yalnızca teknisyen ve admin erişebilir
+if (
+    !isset($_SESSION["kullanici_id"]) ||
+    !in_array($_SESSION["rol"] ?? "", ["teknisyen", "admin"], true)
+) {
+    http_response_code(403);
+    exit("Bu sayfaya erişim yetkiniz yok.");
+}
+
 
 // Veritabanından servis kayıtlarını getir
 $sql = "SELECT
@@ -37,10 +47,11 @@ if (!$sonuc) {
 <div class="teknisyen-panel">
 
     <h1>Atanan Servisler</h1>
+   
+<a href="teknisyen-panel.php" class="geri-butonu">
+    ← Teknisyen Paneline Dön
+</a>
 
-    <a href="teknisyen-panel.html" class="geri-butonu">
-        ← Teknisyen Paneline Dön
-    </a>
 
     <table>
         <thead>
