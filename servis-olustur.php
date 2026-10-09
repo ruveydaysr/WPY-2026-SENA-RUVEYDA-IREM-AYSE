@@ -26,7 +26,7 @@
 
             <h2>Yeni Servis Kaydı</h2>
 
-            <form>
+           <form action="servis-kaydet.php" method="POST">
 
                 <label for="cihaz">Cihaz Türü:</label>
                 <select id="cihaz" name="cihaz" required>
