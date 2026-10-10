@@ -15,8 +15,9 @@
         <nav>
             <a href="musteri-panel.html">Müşteri Paneli</a>
             <a href="servis-olustur.html">Servis Oluştur</a>
-            <a href="servis-takip.html">Servis Takip</a>
-            <a href="index.html">Çıkış Yap</a>
+            <a href="servis-takip.php">Servis Takip</a>
+            <a href="cikis.php">Çıkış Yap</a>
+            
         </nav>
     </header>
 
